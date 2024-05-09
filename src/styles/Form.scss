@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary: rgb(88, 163, 173);
+  --secondary: rgb(13, 28, 29);
+  --tertiary: rgba(0, 128, 0, 0.744);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  padding: 10px 10px 100px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--secondary);
+  font-size: 22px;
+}
+
+header img {
+  height: 100px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto 0 60px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  padding: 8px;
+}
+
+input[type="submit"] {
+  background-color: var(--tertiary);
+  color: white;
+  font-weight: bold;
+  margin: 0 auto 0 0;
+  border-color: var(--tertiary);
+}
+
+#result,
+#loading {
+  margin-top: 50px;
+  display: none;
+}
+
+#demo {
+  background-color: #fff;
+  color: var(--primary);
+  font-weight: bold;
+  filter: drop-shadow(1px 1px 1px black);
+  border-radius: 2px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  padding: 5px 15px;
+}
+
+.FormComponent {
+  .heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
